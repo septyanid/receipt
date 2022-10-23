@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 	return view('layouts.default');
 });
+
+Route::get('receipts', function () {
+	return view('receipts.index');
+});
+
+Route::get('receipts-create', function () {
+	return view('receipts.create');
+});

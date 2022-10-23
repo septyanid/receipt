@@ -116,8 +116,8 @@
 				</ul>
 			</li>
 			<li class="nav-header">EXAMPLES</li>
-			<li class="nav-item menu-open">
-				<a href="#" class="nav-link active">
+			<li class="nav-item">
+				<a href="#" class="nav-link">
 					<i class="nav-icon far fa-plus-square"></i>
 					<p>
 						Extras
@@ -126,7 +126,7 @@
 				</a>
 				<ul class="nav nav-treeview">
 					<li class="nav-item">
-						<a href="../examples/blank.html" class="nav-link active">
+						<a href="../examples/blank.html" class="nav-link">
 							<i class="far fa-circle nav-icon"></i>
 							<p>Blank Page</p>
 						</a>
