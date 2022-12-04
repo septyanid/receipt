@@ -13,18 +13,13 @@
 </section>
 
 <section class="content">
-
-	<!-- Add Button -->
-	<div class="mb-2">
-		<a href="receipts-create" class="btn btn-primary">
-			Add data
-		</a>
-	</div>
-
-	<!-- Default box -->
 	<div class="card">
 		<div class="card-header">
-			<h3 class="card-title">Receipts</h3>
+			<!-- Add Button -->
+			<a href="{{ route('receipts.create') }}" class="btn btn-primary">
+				Add data
+			</a>
+			{{-- <h3 class="card-title">Receipts</h3> --}}
 			<!-- Card Tools -->
 			<div class="card-tools">
 				<button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -104,7 +99,5 @@
 			</table>
 		</div>
 	</div>
-
 </section>
-
 @endsection

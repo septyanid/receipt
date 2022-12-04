@@ -1,9 +1,8 @@
 @extends('layouts.default')
 
-@section('title', 'Add Receipt')
+@section('title', 'Create Receipt')
 
 @section('content')
-
 <section class="content-header">
 	<div class="container-fluid">
 		<div>
@@ -13,28 +12,7 @@
 </section>
 
 <section class="content">
-	<!-- Add Button -->
-	<div class="mb-2">
-		<a href="" class="btn btn-secondary">
-			Back
-		</a>
-	</div>
-
-	<!-- Default box -->
 	<div class="card">
-		<div class="card-header">
-			<h3 class="card-title">Add Receipt</h3>
-			<!-- Card Tools -->
-			<div class="card-tools">
-				<button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-					<i class="fas fa-minus"></i>
-				</button>
-				<button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-					<i class="fas fa-times"></i>
-				</button>
-			</div>
-		</div>
-
 		<div class="card-body">
 			<form action="">
 				@csrf
@@ -84,6 +62,9 @@
 			</form>
 		</div>
 	</div>
+	<a href="{{ route('receipts.index') }}" class="btn btn-secondary">
+		BACK
+	</a>
 </section>
 
 @endsection

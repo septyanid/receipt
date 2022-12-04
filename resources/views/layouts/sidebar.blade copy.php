@@ -26,7 +26,7 @@
 		<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 			<li class="nav-header">APPS</li>
 			<li class="nav-item">
-				<a href="{{ route('receipts.index') }}" class="nav-link {{ request()->routeIs('receipts.index') ? ' active' : '' }}">
+				<a href="{{ route('receipts.index') }}" class="nav-link">
 					<i class="nav-icon fas fa-receipt"></i>
 					<p>
 						Receipts
