@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ReceiptController;
-use App\Http\Controllers\TagController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 	return view('layouts.default');
 });
+
+// User
+Route::resource('users', UserController::class);
 
 // Receipt
 Route::resource('receipts', ReceiptController::class);

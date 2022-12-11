@@ -1,13 +1,13 @@
 @extends('layouts.default')
 
-@section('title', 'Receipts')
+@section('title', 'Users')
 
 @section('content')
 
 <section class="content-header">
 	<div class="container-fluid">
 		<div>
-			<h1>Receipts</h1>
+			<h1>Users</h1>
 		</div>
 	</div>
 </section>
@@ -16,7 +16,7 @@
 	<div class="card card-primary card-outline">
 		<div class="card-header">
 			<!-- Add Button -->
-			<a href="{{ route('receipts.create') }}" class="btn btn-primary">
+			<a href="#" class="btn btn-primary">
 				Add data
 			</a>
 			<div class="card-tools">
@@ -34,20 +34,20 @@
 				<thead>
 					<tr>
 						<th>No</th>
-						<th>Receipt Number</th>
-						<th>Store</th>
-						<th>Total</th>
-						<th>Created At</th>
+						<th>Name</th>
+						<th>Username</th>
+						<th>Email</th>
+						<th>Status</th>
 						<th>Action</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>1</td>
-						<td>012345</td>
-						<td>Indomart</td>
-						<td>Rp. {{ number_format(50000) }}</td>
-						<td>31-12-2022</td>
+						<td>Kevin Septyan</td>
+						<td>kevin</td>
+						<td>kevin@gmail.com</td>
+						<td><span class="badge badge-success">Active</span></td>
 						<td>
 							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 								<i class="fas fa-cogs"></i>
@@ -61,10 +61,10 @@
 					</tr>
 					<tr>
 						<td>2</td>
-						<td>110020</td>
-						<td>PT. Jaya Motor (Bengkel Motor)</td>
-						<td>Rp. {{ number_format(150000) }}</td>
-						<td>31-12-2022</td>
+						<td>Budi Budi</td>
+						<td>budi</td>
+						<td>budi@gmail.com</td>
+						<td><span class="badge badge-success">Active</span></td>
 						<td>
 							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 								<i class="fas fa-cogs"></i>
@@ -78,10 +78,10 @@
 					</tr>
 					<tr>
 						<td>3</td>
-						<td>010101</td>
-						<td>Solaria</td>
-						<td>Rp. {{ number_format(1000000) }}</td>
-						<td>31-12-2022</td>
+						<td>Ani Ani</td>
+						<td>ani</td>
+						<td>ani@gmail.com</td>
+						<td><span class="badge badge-danger">Unactive</span></td>
 						<td>
 							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 								<i class="fas fa-cogs"></i>
@@ -98,4 +98,5 @@
 		</div>
 	</div>
 </section>
+
 @endsection
